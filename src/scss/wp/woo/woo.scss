@@ -1,0 +1,43 @@
+$AccountButtonColor: var(--ColorHead);
+$AccountButtonColorText: var(--ColorTextHead);
+
+$BadgickHit: var(--badgickHit);
+$BadgickNew: var(--badgickNew);
+$BadgickSale: var(--badgickSale);
+
+
+
+@import "./settings/input-button.scss";
+@import "./settings/notices.scss";
+@import "./settings/price_filter.scss";
+@import "./settings/quick-views.scss";
+@import "./settings/owl.scss";
+@import "./settings/count.scss";
+@import "./settings/groul.scss";
+
+@import "./myaccount/login.scss";
+@import "./myaccount/lost-password.scss";
+@import "./myaccount/my-account.scss";
+@import "./myaccount/edit-account.scss";
+@import "./myaccount/edit-address.scss";
+
+
+@import "./cart/table.scss";
+@import "./cart/page-cart.scss";
+@import "./cart/mini-cart.scss";
+
+@import "./checkout/checkout.scss";
+@import "./checkout/order-received.scss";
+
+@import "./page/breadcrumbs.scss";
+@import "./page/archive.scss";
+@import "./page/single-product.scss";
+@import "./page/desc-tabs.scss";
+@import "./page/stars.scss";
+@import "./page/badges.scss";
+@import "./page/cart-products.scss";
+@import "./page/single-page-image.scss";
+
+@import "./plugins/wishlist.scss";
+@import "./plugins/ajax-product-filter.scss";
+

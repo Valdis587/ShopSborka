@@ -1,0 +1,18 @@
+.input-text {
+    border: 1px solid #aaa;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #444;
+}
+.button {
+    background-color: $AccountButtonColor;
+    color: $AccountButtonColorText;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.6s ease 0.3s;
+}
+
+
+

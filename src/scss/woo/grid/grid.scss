@@ -1,0 +1,155 @@
+.shop {
+    &__sidebar-left {
+        display: grid;
+        grid-template-columns: 350px auto;
+        gap: 10px;
+     
+        @media (max-width: 690px) { 
+          grid-template-columns: 100%;       
+    }
+    }
+  
+  &__sidebar {
+    order: -1;
+    @media (max-width: 690px) { 
+        order: 1;
+    }
+  }
+  &__right-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    overflow-x: hidden;
+    padding: 0 10px;
+  } 
+}
+
+.archive {
+  &__sidebar-right {
+      display: grid;
+      grid-template-columns: auto 350px;
+      gap: 10px;
+      @media (max-width: 690px) { 
+          grid-template-columns: 100%;
+    }
+  }
+  &__sidebar-left {
+      display: grid;
+      grid-template-columns: 350px auto;
+      gap: 10px;
+      @media (max-width: 690px) { 
+          grid-template-columns: 100%;       
+    }
+    .sidebar {
+      order: -1;
+      @media (max-width: 690px) { 
+          order: 1;
+      }
+    }
+  }
+  &__cart-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 390px));
+      gap: 10px;
+      @media (max-width: 690px) { 
+          grid-template-columns: 100%;       
+    }
+     
+  }
+ 
+  
+  &__cart-row {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+  }
+  &__content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+  }
+}
+
+.page {
+  &__content {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(auto, 49.50%));
+      align-items: center;
+      gap: 10px;
+      @media (max-width: 810px) {
+          grid-template-columns: 100%;
+      }
+  }
+  &__item {
+      padding: 5px;
+  }
+  &__contact-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      @include funcAdaptiv(font-size, 14, 20);
+      line-height: 110%;
+      i {
+          color: $ColorThemePrimary;
+          margin: 0 5px 0 0;
+      }
+      li {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+      }
+      a:hover {
+          color: $ColorThemePrimary;
+      }
+  }
+  &__text {
+      @include funcAdaptiv(font-size, 14, 20);
+      line-height: 110%;
+      font-style: italic;
+  }
+  &__img {
+      
+      img {
+          width: 100%;
+          border-radius: 5px;
+          object-fit: cover;
+      }
+  }
+  &__error {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      text-align: center;
+  }
+  &__error-title {
+      @include funcAdaptiv(font-size, 24, 90);
+      line-height: 110%;
+      color: $ColorThemePrimary;
+  }
+  &__error-desc {
+      @include funcAdaptiv(font-size, 14, 30);
+      line-height: 110%;
+      font-style: italic;
+  }
+  &__error-button {
+      width: 200px;
+      align-self: center;
+  }
+}
+
+.archive {
+  .not-found {
+      display: flex;
+      flex-direction: column;
+      row-gap: 50px;
+      .page-header {
+          font-size: 20px;
+          font-weight: 700;
+          align-self: center;
+      }
+      .page-not-found {
+          text-align: center;
+          align-self: center;
+      }
+  }
+}

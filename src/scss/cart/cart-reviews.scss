@@ -1,0 +1,48 @@
+.cart {
+    &__reviews {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 5px;
+    }
+    &__reviews-content {
+        display: grid;
+        grid-template-columns: 100px auto;
+        gap: 5px;
+        @media (max-width: 400px) {
+            grid-template-columns: 100%;
+           }
+    }
+    &__reviews-img {
+        max-width: 100px;
+        margin: 0 auto;
+        
+        padding: 5px;
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 3px solid $ColorThemePrimary;
+        }
+    }
+    &__reviews-reviews {
+        font-style: italic;
+       }
+    &__reviews-text {
+        padding: 5px;
+        display: grid;
+        grid-template-rows: 15px 15px 15px minmax(50px, auto);
+        gap: 10px;
+       }
+       &__reviews-name, &__vakan-name {
+        font-size: 20px;
+       }
+       &__reviews-job {
+        font-size: 18px;
+        color: $ColorText;
+       }
+       &__reviews-date {
+        color: $ColorThemePrimary;
+       }
+
+}

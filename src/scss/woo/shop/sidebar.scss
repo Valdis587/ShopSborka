@@ -1,0 +1,165 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    &__carousel {
+        max-width: 270px;
+        margin: 20px auto;
+        padding: 0 10px;
+
+    }  
+    .yith-wcwl-wishlistaddedbrowse i, .yith-wcwl-add-button i, .yith-wcwl-wishlistexistsbrowse a:hover {
+        color: $ColorThemePrimary;
+      }
+      .yith-wcwl-icon{
+        color: $ColorThemePrimary;
+      }
+    .shop__cart-right {
+        text-align: center;
+        display: grid;
+        grid-template-rows: minmax(15px, 30px) 15px 20px 40px;
+        row-gap: 10px;
+        align-items: center;
+        padding: 5px;
+      
+    }
+    .shop__cart-desc {
+        display: none;
+    }
+    .yith-add-to-wishlist-button-block {
+        margin: 0;
+        top: 170px;
+        right: 0px;
+            z-index: 100; 
+            position: absolute;
+        }
+        &__wiget-body {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+        }
+        &__wiget-caregory-list, &__sub-menu {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+    &__link {
+        display: grid;
+        grid-template-columns: 60px auto 10px;
+        align-items: center;
+        gap: 5px;
+        line-height: 110%;
+        img {
+            max-width: 60px;
+            height: 50px;
+            border-radius: 5px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease 0.3s;
+            cursor: pointer; 
+            padding: 5px;
+        }
+        img:hover {
+            border: 1px solid $ColorThemeDuble
+        }
+        i {
+          justify-self: end;
+          cursor: pointer;  
+        }
+        a {
+            transition: all 0.3s ease 0.3s;
+        }
+        a:hover {
+            color: $ColorThemeDuble
+        }
+    }
+    &__sub-menu {
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-100%);
+        padding: 0 0  0 10px;
+        background-color: $ColorWhite;
+    }
+    &__wiget-caregory-list {
+        margin: 10px auto;
+        width: 100%;
+        padding: 5px;
+    }
+    .open-sidebar-category {
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .cart__reviews-content {
+        display: grid;
+        grid-template-rows: 100px auto;
+        grid-template-columns: 100%;
+        gap: 5px;
+    }
+    .cart__reviews-text {
+        grid-template-rows: 15px 15px 15px minmax(100px, 130px);
+    }
+    .cart__reviews-reviews {
+       // align-self: self-end;
+       padding: 5px;
+    }
+    .cart__reviews-img {
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+    &__widget-wrapper {
+        padding: 5px;
+        margin: 20px 0;
+    }
+    &__news-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    &__news-item { 
+        display: grid;
+        grid-template-columns: 80px auto;
+        gap: 5px;
+        align-items: center;
+        img {
+          width: 70px;
+          height: 50px;
+          border-radius: 3px;
+          transition: 0.3s all ease 0.3s;
+            border: 1px solid #ddd;
+        }
+        
+        img:hover {
+          border-color: 1px solid $ColorThemeDuble
+        }
+        a:hover {
+          color: $ColorThemeDuble
+        }
+    }
+    &__searchform {
+        display: grid;
+        grid-template-columns: auto 40px;
+        align-items: center;
+      }
+      &__searchform-input {
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 10px 5px;
+        color: #949494;
+      }
+      &__searchform-button {
+        background-color: $ColorThemePrimary;
+        color: $ColorWhite;
+        padding: 11px;
+        border-radius: 3px;
+        transition: 0.3s all ease 0.3s;
+      }
+      &__searchform-button:hover {
+        background-color: $ColorThemeDuble;
+      }
+}

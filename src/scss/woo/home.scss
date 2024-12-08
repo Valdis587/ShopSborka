@@ -1,0 +1,93 @@
+.caruselhome {
+    
+    .shop__cat-item {
+        width: auto;
+    }
+    .shop__carusel-img {
+        img {
+            width: 160px;
+            height: 200px;
+            object-fit: contain;
+        }
+    }
+    .shop__carusel-cat-name {
+        font-size: 18px;
+        line-height: 110%;
+    }
+}
+.categoryflex {
+ 
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+       
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 130px minmax(150px, 200px);
+        gap: 10px;
+        padding: 5px;
+        border-radius: 3px;
+        border: 1px solid #ddd;
+       
+    }
+    &__img {
+        max-width: 130px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            height: 130px;
+            transition: all 0.3s ease 0.3s;
+            border-radius: 3px;
+        }
+
+    }
+    &__info {
+        padding: 10px 5px 5px 5px;
+     
+      
+    }
+    & a {
+        transition: all 0.3s ease 0.3s;
+    }
+    & a:hover {
+        color: $ColorThemePrimary;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 110%;
+      
+    }
+    &__name:hover {
+        color: $ColorThemePrimary; 
+    }
+    &__list-subname {
+        margin: 10px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        a {
+            transition: all 0.3s ease 0.3s;
+        }
+        a:hover {
+            color: $ColorThemePrimary;
+        }
+    }
+}
+.logo {
+    margin: 50px auto;
+    &__item {
+        text-align: center;
+       img {
+        width: 120px;
+        height: 120px;
+       }
+
+    }
+ }
+ .carousel-home{
+    padding: 0 15px;
+ }

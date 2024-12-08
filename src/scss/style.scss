@@ -1,0 +1,107 @@
+//@import "owl.carousel.scss";
+@import "node_modules/swiper/swiper.scss";
+@import "node_modules/swiper/modules/navigation.scss";
+@import "node_modules/swiper/modules/effect-fade.scss";
+@import "node_modules/swiper/modules/thumbs.scss";
+
+@import "base/null.scss";
+@import "base/mixin";
+:root {
+   --ColorThemePrimary: #04b32a;
+   --ColorThemeDuble: #0d25c4;
+   --ColorText: #555555;
+   --ColorButton: #32373c;
+   --ColorButtonShop: #0d25c4;
+   --ColorButtonShopHover: #c40d0d;
+   --ColorWhite: #ffffff;
+   --ColorButtonHover: #6a6c6e;
+   --ColorLink: #2e4a97;
+   --ColorLinkHover: #4d7af7;
+   --ColorCount: #04b32a;
+   --yith-wcan-labels_style_background_hover: #007AFC;
+    --yith-wcan-filters_colors_accent: #007AFC;
+    --yith-wcan-anchors_style_text_hover:  #007AFC; 
+    --yith-wcan-anchors_style_text_active: #007AFC;
+    --badgickSale: #ff2d37;
+    --badgickNew: #3599ff;
+    --badgickHit: #098524;
+}
+
+$minWidth: 320;
+$maxWidthContainer: 1590;
+$padding: 15;
+
+$ColorThemePrimary: var(--ColorThemePrimary);
+$ColorThemeDuble: var(--ColorThemeDuble);
+$ColorText: var(--ColorText);
+$ColorButton: var(--ColorButton);
+$ColorButtonShop: var(--ColorButtonShop);
+$ColorButtonShopHover: var(--ColorButtonShopHover);
+$ColorWhite: var(--ColorWhite);
+$ColorButtonHover: var(--ColorButtonHover);
+$ColorLink: var(--ColorLink);
+$ColorLinkHover: var(--ColorLinkHover);
+$ColorCount: var(--ColorCount);
+
+
+.container {
+   max-width: #{$maxWidthContainer}px;
+   padding: 0 #{$padding}px;
+   margin: 0 auto;
+}
+
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   overflow-x: hidden;
+}
+.content-wrapper {
+   flex-grow: 1;
+   //margin: 237px 0 50px 0;
+   max-width: 100%;
+   height: 100%;
+   overflow-x: hidden;
+   z-index: 1;
+}
+.title-home-wrapper {
+   text-align: center;
+   margin: 50px 0 20px 0;
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+   padding: 0 10px;
+   @media (max-width: 760px) {
+      margin: 20px 0;
+  }
+}
+.title-home {
+   @include funcAdaptiv(font-size, 25, 40);
+   line-height: 110%;
+   font-weight: 600;
+}
+.desc-home {
+   max-width: 900px;
+   margin: 0 auto;
+}
+footer {
+   margin-top: auto;
+}
+body {
+   color: $ColorText;
+   background-color: $ColorWhite;
+}
+
+
+
+@import "fonts";
+
+@import "./wp/wpstyle.scss";
+@import "headpanel.scss";
+@import "woo/woo.scss";
+@import "header";
+@import "cart/cart-reviews.scss";
+@import "footer";
+
+

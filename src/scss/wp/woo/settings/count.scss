@@ -1,0 +1,38 @@
+.product__count {
+    position: absolute;  
+    z-index: 20;
+    border-radius: 3px;
+    background-color: #E67E22;
+    color: $AccountButtonColorText;
+    width: 250px;
+    padding: 5px;
+    .product__count-title {
+        font-size: 18px;
+        padding: 5px 0 10px 0;
+        border-bottom: 1px solid #fff;
+        text-align: center;
+    }
+    .countdown-row {
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0;
+        align-items: center;
+        text-align: center;
+    }
+    .time-item {
+        width: 70px;
+        padding: 5px 0;
+        border: 1px solid #fff; 
+        border-radius: 3px;   
+    }
+    .num-time {
+        font-size: 22px;
+    }
+    .name-time {
+        padding: 4px 0 0 0;
+        text-align: center;
+    }
+}

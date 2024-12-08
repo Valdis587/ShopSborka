@@ -1,0 +1,21 @@
+
+
+.swiper-button-prev, .swiper-button-next {
+    background-color: $ColorThemePrimary;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $ColorWhite;
+    border-radius: 100%;
+    color: $ColorWhite;
+    transition: 0.3s all ease 0.3s;
+    @media (max-width: 460px) { 
+       display: none;
+    }
+ }
+ .swiper-button-prev:hover, .swiper-button-next:hover {
+    background-color: $ColorThemeDuble;
+    
+ }
+ .swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 20px
+ } 

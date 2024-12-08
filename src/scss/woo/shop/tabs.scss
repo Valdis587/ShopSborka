@@ -1,0 +1,29 @@
+.shop {
+    .woocommerce-tabs {
+        margin: 20px 0;
+        padding: 0 10px;
+       // border-bottom: 2px solid $ColorThemePrimary;
+    }
+    .wc-tabs {
+        display: flex;
+        gap: 10px;
+        .active {
+            background-color: $ColorThemePrimary;
+            color: $ColorWhite;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        li {
+            @include funcAdaptiv(font-size, 16, 26);
+            padding: 10px 5px;
+        }
+    }
+    .woocommerce-Tabs-panel {
+        border-top: 2px solid $ColorThemePrimary;
+        h2 {
+            @include funcAdaptiv(font-size, 16, 20); 
+            padding: 10px 0;
+        }
+        padding: 10px 0 0 0;
+    }
+}

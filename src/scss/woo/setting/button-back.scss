@@ -1,0 +1,25 @@
+.footer {
+    &__back {
+        position: fixed;
+        right: 40px;
+        bottom: 40px;
+        z-index: 500;
+        transform: rotate(180deg);
+        i {
+           font-size: 25px;
+           color: $ColorWhite;
+           background-color: $ColorThemePrimary;
+           padding: 10px;
+           border-radius: 3px;
+           transition: all 0.6s ease 0.3s;
+           cursor: pointer; 
+        }
+        i:hover {
+           background-color: $ColorThemeDuble
+        }
+       
+     }
+}
+.hidden-top {
+    display: none;
+ }

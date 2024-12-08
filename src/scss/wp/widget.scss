@@ -1,0 +1,20 @@
+.tagcloud {
+   margin: 10px;
+   font-size: 14px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+.tag-cloud-link {
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   transition: all .3s ease .3s;
+   
+}
+.tag-cloud-link:hover {
+   background-color: $ColorThemePrimary;
+   color: #fff;
+   border: 1px solid $ColorThemePrimary;
+}

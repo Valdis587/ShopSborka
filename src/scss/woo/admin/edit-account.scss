@@ -1,0 +1,30 @@
+.woocommerce-edit-account {
+    .woocommerce-EditAccountForm {
+        max-width: 70%;
+        margin: 0 auto;
+        @media (max-width: 500px) {
+           max-width: 100%;
+           }
+        input {
+            margin: 10px 0 0 0;
+        }
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        .input-text {
+            width: 100%;
+        }
+        fieldset  {
+            text-align: center;
+            legend {
+                width: 100%;
+                font-size: 26px;
+                padding: 40px 0;
+            }
+           display: flex;
+           flex-direction: column;
+           row-gap: 20px;
+        }
+    }
+    
+}

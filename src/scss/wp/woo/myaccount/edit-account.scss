@@ -1,0 +1,10 @@
+.woocommerce-edit-account {
+    .woocommerce-EditAccountForm {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        .input-text {
+            width: 100%;
+        }
+    }
+}
