@@ -83,6 +83,9 @@
 .woocommerce-mini-cart__buttons {
     a {
         font-size: 12px;
+        @media(max-width: 500px) { 
+            font-size: 10px;
+        }
     }
     margin: 10px 0;
     display: flex;
