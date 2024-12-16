@@ -4,6 +4,9 @@
         border: 1px solid #ddd;
         border-radius: 3px;
         padding: 5px;
+        &:hover {
+            box-shadow: 5px 5px 5px rgb(71, 71, 71);
+        }
     }
     &__reviews-content {
         display: grid;
@@ -31,7 +34,7 @@
     &__reviews-text {
         padding: 5px;
         display: grid;
-        grid-template-rows: 15px 15px 15px minmax(50px, auto);
+        grid-template-rows: 15px 15px 15px auto;
         gap: 10px;
        }
        &__reviews-name, &__vakan-name {
