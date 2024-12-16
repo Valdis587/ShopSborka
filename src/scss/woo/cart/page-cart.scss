@@ -5,8 +5,8 @@
     .woocommerce-cart-form__cart-item {   
       .product-remove .remove {
         color: #fff;
-         background-color: #d9534f;
-        border-color: #d43f3a;
+         background-color: $ColorRed;
+        border-color: $ColorRed;
        padding: 5px 7px;
         font-size: 15px;
         border-radius: 3px;   
@@ -87,4 +87,13 @@
         flex-direction: column;
         row-gap: 20px;
       }
+      .quantity {
+        .number-minus, .number-plus {
+            transition: all 0.3s ease 0.3s;
+            background-color: #444;
+        }
+        .number-minus:hover, .number-plus:hover {
+            background-color: $ColorButtonHover
+        }
+    }
 }

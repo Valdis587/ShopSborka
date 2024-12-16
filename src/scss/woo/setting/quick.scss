@@ -1,18 +1,18 @@
-.themeModal {
+.themeModal, .themeModal2 {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 7000;
+    z-index: 3000;
     opacity: 0;
     visibility: hidden;
     overflow-y: auto;
     overflow-x: hidden;
-    -webkit-transition: all 0.8s ease 0s;
-    -o-transition: all 0.8s ease 0s;
-    transition: all 0.8s ease 0s;
+    -webkit-transition: all 0.3s ease 0.3s;
+    -o-transition: all 0.3s ease 0.3s;
+    transition: all 0.3s ease 0.3s;
     .shop .entry-summary .product_title {
       @include funcAdaptiv(font-size, 20, 30);
     }
@@ -53,36 +53,150 @@
   }
 }
 
-.themeModal__body {
+.themeModal__body, .themeModal2__body {
   background-color: #fff;
-  max-width: 1000px;
   height: auto;
   opacity: 1;
   border: 5px solid $ColorThemePrimary;
   border-radius: 10px;
   position: relative;
-  -webkit-transition: all 0.8s ease 0.8s;
-  -o-transition: all 0.8s ease 0.8s;
-  transition: all 0.8s ease 0.8s;
-  margin: 150px auto;
+  -webkit-transition: all 0.3s ease 0.3s;
+  -o-transition: all 0.3s ease 0.3s;
+  transition: all 0.3s ease 0.3s; 
  padding: 10px;
   }
+  .themeModal__body {
+    max-width: 1000px;
+    margin: 150px auto;
+  }
+  .themeModal2__body {
+    max-width: 700px;
+    margin: 250px auto;
+  }
 
-  .themeModal__header {
+  .themeModal__header, .themeModal2__header {
     height: 20px;
     opacity: 1;
     width: 100%;
     text-align: right;
   }
-  .modal-close  {
+  .modal-close, .modal-close2  {
     background-color: inherit;
     transform: rotate(45deg);
     color: #777; 
   }
-  .themeModal-open {
+  .themeModal-open, .themeModal-open2 {
     opacity: 1;
     visibility: visible;
    
+  }
+  .themeModal2__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .themeModal2__title {
+    text-align: center;
+    @include funcAdaptiv(font-size, 20, 35);
+    line-height: 110%;
+  }
+  .themeModal2__content-wrapp {
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 250px auto;
+    gap: 10px;
+    @media(max-width: 650px) { 
+      grid-template-columns: 100%;
+    }
+  }
+  .themeModal2__right {
+    p, span, input {
+      max-width: 100%;
+      flex: 1 1 auto;
+    }
+    input[type="text"] {
+      color: #bdbdbd;
+    }
+  }
+  .themeModal2__left {
+    max-width: 100%;
+    margin: 0 auto;
+    @media(max-width: 650px) { 
+      display: none;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .theme-form-wrapp {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    .wpcf7-acceptance label {
+      position: relative;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .wpcf7-acceptance input[type="checkbox"] {
+      position: relative;
+      display: none;
+    }
+    .wpcf7-list-item-label {
+      position: relative;
+      cursor: pointer;
+      display: inline-flex;
+      flex: 1 1 100%;
+      width: 100%;
+    }
+    .wpcf7-acceptance input[type="checkbox"] + span:before {
+      content: "";
+      flex:  0 0 14px;
+      height: 14px;
+      background-color: #ffffff;
+      border-radius: 3px;
+      border: 1px solid #868686;
+      margin: 0 5px 0 0 ;
+      
+    }
+    .wpcf7-acceptance input[type="checkbox"] + span:after {
+      content: "";
+      position: absolute;
+      background-color: $ColorThemePrimary;
+      top: 2px;
+      left: 2px;
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      transform: scale(0);
+      transition: 0.3s all ease 0.3s;
+    }
+    .wpcf7-acceptance input[type="checkbox"]:checked + span:before {
+      background: transparent;
+    }
+    .wpcf7-acceptance input[type="checkbox"]:checked + span:after {
+      transform: scale(1);
+    }
+    .wpcf7-list-item label {
+      display: block;
+      width: 100%;
+    }
+    .wpcf7-list-item {
+      display: inline-flex;
+      width: 100%;
+      .wpcf7-list-item-label {
+          width: 100%;
+        }
+    }
+   
+  }
+  
+  .themeModal2__button {
+    cursor: pointer;
+  }
+  .themeModal2 .button {
+    width: 100%;
   }
 
  

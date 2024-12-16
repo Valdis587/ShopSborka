@@ -68,6 +68,30 @@
       flex-direction: column;
       row-gap: 20px;
   }
+
+}
+
+.search-no-results {
+    .archive__cart-col {
+    display: grid;
+    grid-template-columns: 100%; 
+}
+  .not-found, .page-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+    .page-header {
+        font-size: 20px;
+        font-weight: 700;
+        align-self: center;
+    }
+    .page-not-found {
+        text-align: center;
+        align-self: center;
+    }
+  }
 }
 
 .page {

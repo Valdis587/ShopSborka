@@ -79,6 +79,7 @@
    
 }
 &__cat-item {
+    background-color: $ColorWhite;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -90,8 +91,10 @@
     margin: 0 auto;
     max-width: 100%;
     height: auto;
+    cursor: pointer;
 }
 &__cat-item:hover {
+    box-shadow: 5px 5px 5px rgb(71, 71, 71);
     border: 1px solid $ColorThemePrimary;
 }
 &__carusel-img {
@@ -103,6 +106,7 @@
     }
 }
 &__carusel-cat-name a {
+    font-weight: 700;
     transition: all 0.3s ease 0.3s;
 }
 &__carusel-cat-name a:hover { 

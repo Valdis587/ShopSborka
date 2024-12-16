@@ -81,6 +81,7 @@
             }
         }
     }
+  
  .entry-summary {
      display: flex;
      flex-direction: column;
@@ -91,12 +92,14 @@
             flex-direction: column;
             row-gap: 10px;
         }
-        .number-minus, .number-plus {
-            transition: all 0.3s ease 0.3s;
-            background-color: #444;
-        }
-        .number-minus:hover, .number-plus:hover {
-            background-color: $ColorButtonHover
+        .quantity {
+            .number-minus, .number-plus {
+                transition: all 0.3s ease 0.3s;
+                background-color: #444;
+            }
+            .number-minus:hover, .number-plus:hover {
+                background-color: $ColorButtonHover
+            }
         }
       }
       .yith-wcwl-add-to-wishlist-button__label {

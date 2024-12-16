@@ -1,7 +1,7 @@
 
 
 .swiper-button-prev, .swiper-button-next {
-    background-color: $ColorThemePrimary;
+    background-color: $ColorButton;
     width: 40px;
     height: 40px;
     border: 2px solid $ColorWhite;
@@ -13,7 +13,7 @@
     }
  }
  .swiper-button-prev:hover, .swiper-button-next:hover {
-    background-color: $ColorThemeDuble;
+    background-color: $ColorButtonHover;
     
  }
  .swiper-button-prev::after, .swiper-button-next::after {
