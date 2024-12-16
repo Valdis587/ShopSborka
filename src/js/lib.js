@@ -21,7 +21,7 @@ $(document).ready(function ($) {
             });
             
     });
-    $('.add_to_wishlist').on('click', function () {
+    $('.yith-add-to-wishlist-button-block').on('click', function () {
         setTimeout(function(){
                 location.href = '';
             }, 6000);
