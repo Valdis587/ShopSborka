@@ -86,6 +86,7 @@
      display: flex;
      flex-direction: column;
      row-gap: 20px;
+ 
      .cart { 
         @media(max-width: 420px) {
             display: flex;
@@ -107,20 +108,19 @@
       }
       .yith-wcwl-add-to-wishlist-button {
         display: block;
-        width: 50px;
+        width: 42px;
         position: absolute;
         top: -69px;
         //left: 310px;
-        right: -280px;
+        right: -290px;
         z-index: 10;
+        height: 42px;
         background-color: $ColorButton;
         color: $ColorWhite;
         border: 1px solid $ColorButton;
-        padding: 9px 9px 6px 9px;
+       // padding: 9px 9px 6px 9px;
         border-radius: 5px;
-        @media(max-width: 420px) {
-            right: -200px;
-        }
+       
       }
       .yith-add-to-wishlist-button-block {
         width: 50px;
@@ -202,11 +202,11 @@
       
         .cart {
             display: flex;
-            column-gap: 10px;
-           
+            align-items: center;
+            gap: 10px;
         }
         .yith-wcwl-add-to-wishlist-button  {
-            color: $ColorThemePrimary;
+            color: $ColorWhite;
         }
     }
     .product-type-variable {
@@ -313,6 +313,12 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    max-width: 100%;
+    .variations_button {
+        display: flex;
+        align-items: center;
+       gap: 10px;
+    }
     .woocommerce-variation {
         display: flex;
         flex-direction: column;
@@ -432,5 +438,17 @@
             max-width: 260pc;
             padding: 0 10px;
         }
+    }
+   
+}
+.product-type-simple {
+      
+    .cart {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .single_add_to_cart_button {
+        height: 42px;
     }
 }

@@ -1,4 +1,10 @@
-
+.post-type-archive-product {
+    .product
+    .button {
+        width: 80%;
+        margin: 0 auto;
+    } 
+}
 .shop {
     .product:hover {
         .countdown_inner {
@@ -31,11 +37,12 @@
         }
     }
   }
+
+  
     .product {
         
         .button {
-            width: 80%;
-            margin: 0 auto;
+           
             background-color: $ColorButtonShop;
             i {
                 margin: 0 5px 0 0;
