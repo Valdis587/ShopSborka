@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package ShopStart
+ * @package ShopsMax
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -64,16 +64,19 @@ class Caregory_Widget extends WP_Widget {
                                 'parent' => $term->term_id
                             ) );
                             if($children_terms) { ?>
-                                <li class="sidebar__link sidebar__sub-category"><a href="<?php echo get_category_link($term->term_id);?>"><img src="<?php echo $image; ?>" alt="<?php echo $term->name;?>"></a><a href="<?php echo get_category_link($term->term_id);?>"><?php echo $term->name;?></a><i class="icon-angle-down"></i>
+                                <li class="sidebar__link sidebar__sub-category"><?php if($image) { ?><a href="<?php echo get_category_link($term->term_id);?>"><img src="<?php echo $image; ?>" alt="<?php echo $term->name;?>"></a><?php } ?><a href="<?php echo get_category_link($term->term_id);?>"><?php echo $term->name;?></a><i class="icon-angle-down"></i>
                                     <ul class="sidebar__sub-menu">
-                                        <?php foreach ($children_terms as $children_term) { ?>
-                                            <li class="sidebar__link"><a href="<?php echo get_category_link($term->term_id);?>"><img src="<?php echo $image; ?>" alt="<?php echo $term->name;?>"></a><a  href="<?php echo get_category_link($children_term->term_id);?>"><?php echo $children_term->name; ?></a></li>
+                                        <?php foreach ($children_terms as $children_term) { 
+                                              $thumbnail_id =get_term_meta($children_term->term_id, 'thumbnail_id', true );
+                                              $image = wp_get_attachment_url( $thumbnail_id);
+                                            ?>
+                                            <li class="sidebar__link"><?php if($image) { ?><a href="<?php echo get_category_link($term->term_id);?>"><img src="<?php echo $image; ?>" alt="<?php echo $term->name;?>"></a><?php } ?><a  href="<?php echo get_category_link($children_term->term_id);?>"><?php echo $children_term->name; ?></a></li>
                         
                                         <?php } ?>
                                     </ul>
                                 </li>
                             <?php } else { ?>
-                                <li class="sidebar__link "><a href="<?php echo get_category_link($term->term_id);?>"><img src="<?php echo $image; ?>" alt="<?php echo $term->name;?>"></a><a href="<?php echo get_category_link($term->term_id);?>"><?php echo $term->name;?></a></li>
+                                <li class="sidebar__link "><?php if($image) { ?><a href="<?php echo get_category_link($term->term_id);?>"><img src="<?php echo $image; ?>" alt="<?php echo $term->name;?>"></a><?php } ?><a href="<?php echo get_category_link($term->term_id);?>"><?php echo $term->name;?></a></li>
                             <?php } } } ?>
                 </ul>
                             </div>
